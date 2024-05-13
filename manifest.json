@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "Purple Div Background",
+    "description": "This extension turns all div backgrounds to purple.",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "unlimitedStorage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.njuskalo.hr/*"
+            ],
+            "js": [
+                "background.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
